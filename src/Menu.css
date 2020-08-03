@@ -1,0 +1,29 @@
+.menuWrap {
+  margin-top: 5px;
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+}
+.menuWrap__list {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  padding: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuWrap__list li {
+    object-fit: contain;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin: 4px 12px;
+  font-weight: 500;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.menuWrap__icon {
+  align-items: center;
+  display: flex;
+  color: lightgrey;
+  font-size: 16px !important;
+}
