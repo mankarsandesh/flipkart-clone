@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from "./Header";
-import Menu from "./Menu";
-import Footer from "./Footer";
+import Header from "Component/Header/Header";
+import Menu from "Component/Menu/Menu";
+import Footer from "Component/Footer/Footer";
 function App() {
   return (
     <div className="App">
