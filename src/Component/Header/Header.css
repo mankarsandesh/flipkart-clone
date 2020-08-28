@@ -56,10 +56,11 @@
 .headerMain__login {
   background-color: #fff;
   width: 100px;
-  padding: 4px 6px;
+  padding: 6px 10px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   color: #2874f0;
+  border:1px solid white;
 }
 .headerMain__more {
   margin-left: 30px;
