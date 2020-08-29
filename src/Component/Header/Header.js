@@ -5,10 +5,11 @@ import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { Box } from '@material-ui/core';
 
 function Header() {
     return (      
-        <div className="headerMain">
+        <Box className="headerMain" boxShadow={2}>
             <div className="headerMain__navbar">
 
                 <div className="headerMain__logo">
@@ -34,7 +35,7 @@ function Header() {
                 </div>
             </div>
            
-        </div>
+        </Box>
        
     )
 }

@@ -11,20 +11,27 @@ import {
 } from "@material-ui/core";
 import { green } from "@material-ui/core/colors";
 const useStyles = makeStyles((theme) => ({
-  TopDealHeader: {
-    padding: "0px 20px",
+  TopDealHeaderTop: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    padding: "0px 10px",
+  },
+  TopDealHeader: {
+    padding: "0px 10px",
+    justifyItems: "center",
+    marginBottom: "10px",
   },
   header: {
-    marginRight: "20px",
+    fontSize: "20px",
+    margin: "00px",
   },
-  timeLeft: {
+  showNow: {
+    margin: "0px 10px",
     color: "#cccccc",
   },
   ViewAllButton: {
-    flexDirection: "end",
+    marginTop: "10px",
     backgroundColor: "#2874f0",
     border: "1px solid white",
     color: "white",
@@ -37,8 +44,8 @@ const useStyles = makeStyles((theme) => ({
   TopDealWrapper: {
     width: "100%",
     display: "flex",
-    borderTop:'1px solid rgba(0,0,0,.1)',
-    padding:'10px 0px'
+    borderTop: "1px solid rgba(0,0,0,.1)",
+    padding: "10px 0px",
   },
   product: {
     padding: "5px",
@@ -55,26 +62,27 @@ const useStyles = makeStyles((theme) => ({
   ProductInfo: {
     color: "#cccccc",
   },
-  CardImg : {
-    padding:'5px'
-  }
+  CardImg: {
+    padding: "5px",
+  },
 }));
 
-export default function TopDeals() {
+export default function ProductList(props) {
   const classes = useStyles();
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={10}>
+      <Grid item xs={12}>
         <Card>
           <div className={classes.TopDealHeader}>
-            <h3 className={classes.header}>
-              Deals of the Day{" "}
-              <small className={classes.timeLeft}>03:07:48 Left</small>
-            </h3>
+            <div className={classes.TopDealHeaderTop}>
+              <h3 className={classes.header}>{props.title}</h3>
 
-            <button className={classes.ViewAllButton}>View All</button>
+              <button className={classes.ViewAllButton}>View All</button>
+            </div>
+            <p className={classes.showNow}>{props.desc}</p>
           </div>
+
           <div className={classes.TopDealWrapper}>
             <div className={classes.product}>
               <img
@@ -139,15 +147,17 @@ export default function TopDeals() {
               <p className={classes.ProductOffer}>Upto 50% off</p>
               <p className={classes.ProductInfo}>JBL,Artis & more</p>
             </div>
+
+            <div className={classes.product}>
+              <img
+                src="https://rukminim1.flixcart.com/flap/150/150/image/7184858edcf65db2.png?q=70"
+                alt="Product Image"
+              />
+              <h3 className={classes.ProductName}>Headphones</h3>
+              <p className={classes.ProductOffer}>Upto 50% off</p>
+              <p className={classes.ProductInfo}>JBL,Artis & more</p>
+            </div>
           </div>
-        </Card>
-      </Grid>
-      <Grid item xs={2}>
-        <Card className={classes.CardImg}>
-          <img
-            width="100%" height="355px"
-            src="https://rukminim1.flixcart.com/flap/464/708/image/7e973bfac61fd4d8.jpg?q=70"
-          />
         </Card>
       </Grid>
     </Grid>
