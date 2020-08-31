@@ -1,0 +1,15 @@
+ .heading{
+    color: #848484;
+    font-weight: 500;
+ }
+ .headerWrapper{
+     
+     display: flex;
+ }
+ .headerWrapper div :first-child{
+     font-size: 12px;
+ }
+ .headerWrapper div{
+     margin:0 5px;
+     font-size: 10px;
+ }
