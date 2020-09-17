@@ -10,6 +10,74 @@
 .headerMain__navbar .headerMain__logo > img {
   width: 80px;
 }
+.loginRight{
+  padding:30px;
+  height: auto;
+  position: relative;
+}
+.loginDialog{
+}
+.loginButton{
+  background-color: #fb641b !important;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  border: none;
+  color: #fff;
+  cursor:pointer;
+  padding:12px 12px;
+  width: 95%;
+  font-weight: 600 !important;
+  text-align: center;
+}
+.newAccount{
+  margin-top:130px;
+  text-align: center;
+}
+.newAccount a{
+  color: #2874f0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600 !important;
+}
+.requestButton{
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,.12);
+  line-height: 180%;
+  text-align: center;
+  color: #2874f0;
+  background-color: #fff;
+  margin-top: 16px;
+  padding:12px 12px;
+  width: 95%;
+  text-transform: capitalize;
+  cursor:pointer;
+  font-weight: 600 !important;
+}
+.input{
+  padding: 40px;
+  margin:20px;
+}
+.standard-basic{
+    width: 100%;
+  }
+  .orDiv{
+    color:#878787;
+    text-align: center;
+  }
+.loginLeft{
+  height: 500px;
+  padding:20px;
+  background-color:#2874f0 !important;
+  background-image: url(//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_dec4bf.png);
+  background-position: center 85%;
+  background-repeat: no-repeat;
+}
+.loginLeft h2{
+  color:#FFF;
+}
+.loginLeft p{
+  color:#dbdbdb;
+  width: 80%;
+  font-size: 18px;
+}
 .headerMain__navbar {
   justify-content: space-between;
   width: 55%;
@@ -61,6 +129,7 @@
   font-weight: 600;
   color: #2874f0;
   border:1px solid white;
+  cursor: pointer;
 }
 .headerMain__more {
   margin-left: 30px;

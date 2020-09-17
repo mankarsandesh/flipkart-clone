@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   popover: {
     pointerEvents: "none",
+    border: "1px solid red",
   },
   paper: {
     padding: theme.spacing(1),
@@ -30,12 +31,7 @@ export default function MouseOverPopover() {
   return (
     <div className="menuWrap">
       <ul className="menuWrap__list">
-        <li
-          aria-owns={open ? "mouse-over-popover" : undefined}
-          aria-haspopup="true"
-          onMouseEnter={handlePopoverOpen}
-          onMouseLeave={handlePopoverClose}
-        >
+        <li>
           Electronic <ExpandMoreIcon className="menuWrap__icon" />
         </li>
         <li>
@@ -63,27 +59,6 @@ export default function MouseOverPopover() {
         <li> Flights </li>
         <li> Offer Zone </li>
       </ul>
-      <Popover
-      
-        className={classes.popover}
-        classes={{
-          paper: classes.paper,
-        }}
-        open={open}
-        anchorEl={anchorEl}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "left",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "left",
-        }}
-        onClose={handlePopoverClose}
-        disableRestoreFocus
-      >
-        <div>I use Popover.</div>
-      </Popover>
     </div>
   );
 }
